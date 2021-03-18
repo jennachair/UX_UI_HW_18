@@ -1,0 +1,71 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(213, 194, 95);
+}
+.logo {
+    display: flex;
+    justify-content: flex-start;
+}
+.nav-button-container {
+    padding: 10px;
+    display: inline-block;
+}
+.nav-button {
+    padding: 20px;
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.heroSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 0px;
+    padding-left: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(254, 243, 231);
+}
+.leftHero {
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+}
+.flex {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+}
+#row {
+    flex-direction: row;
+    flex-wrap: wrap;
+  
+}
+.downloadResume {
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 4%;
+    width: 40%;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    background-color: rgb(213, 194, 95);
+    transform: translate(80%, 40%);
+}
+footer {
+    display: flex;
+    justify-content: center;
+    background-color:rgb(152, 149, 193);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-button {
+    display: flex;
+    padding: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
