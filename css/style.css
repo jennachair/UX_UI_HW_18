@@ -53,6 +53,40 @@ nav {
     background-color: rgb(213, 194, 95);
     transform: translate(80%, 40%);
 }
+/* <!--  My UX Skills section coded using CSS flex --> */
+h1 {
+
+}
+.flexContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    background-color: rgb(254, 243, 231);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0 10px;
+}
+.userResearch {
+    display: flex;
+    width: 33%;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: auto;
+}
+.uiDesign {
+    display: flex;
+    width: 33%;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.webDevelopment {
+    display: flex;
+    width: 33%;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
 footer {
     display: flex;
     justify-content: center;
