@@ -97,14 +97,42 @@ nav {
 /* My Work Section Grid */
 .workGrid {
     margin:auto;
+    padding: 2%;
     display: grid;
     grid-template-columns: 2fr 2fr;
     grid-template-rows: 2fr 2fr;
     grid-template-areas: 
-    "workImg workDescription"
-    "workImg WorkDescription"
-    "workImg workDescription"
+    "pawsWorkImg pawsWorkDescription"
+    "choosineWorkImg choosineWorkDescription"
+    "vaycautiousWorkImg vaycautiousWorkDescription"
     ;
+}
+.pawsWorkImg {
+    grid-area: pawsWorkImg;
+}
+.pawsWorkDescription {
+    grid-area: pawsWorkDescription;
+}
+.choosineWorkImg {
+    grid-area: choosineWorkImg;
+}
+.choosineWorkDescription {
+    grid-area: choosineWorkDescription;
+}
+.vaycautiousWorkImg {
+    grid-area: vaycautiousWorkImg;
+}
+.vaycautiouseWorkDescription {
+    grid-area: vaycautiousWorkDescription;
+}
+.workGridArea {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    cursor: pointer;
+    display: grid;
+    align-content: center;
 }
 .seeMore {
     padding: 5%;
@@ -132,4 +160,24 @@ footer {
     display: flex;
     padding: 2px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media only screen and (max-width: 600){
+    .flexContainer .flexContainer div {
+        flex-direction: column;
+    }
+    .skill-1 .skill-2 .skill-3 {
+        width: 100;
+    }
+    .workGrid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "pawsWorkImg" 
+            "pawsWorkDescription"
+            "choosineWorkImg" 
+            "choosineWorkDescription"
+            "vaycautiousWorkImg" 
+            "vaycautiousWorkDescription"
+        ;
+    }
 }
