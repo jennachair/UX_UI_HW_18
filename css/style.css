@@ -1,10 +1,12 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(254, 243, 231);
 }
 nav {
+    margin: 0;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(213, 194, 95);
+    background-color: #D5C25F;
 }
 .logo {
     display: flex;
@@ -28,33 +30,41 @@ nav {
     padding-right: 0px;
     padding-left: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(254, 243, 231);
+    text-align: center;
 }
 .leftHero {
     display: flex;
-    justify-content: flex-start;
-    text-align: center;
+    justify-content: flex-end;
 }
-.flex {
+.heroFlex {
     display: flex;
     padding: 10px;
     margin: 10px;
+    text-align: center;
 }
-#row {
+#heroRow {
     flex-direction: row;
     flex-wrap: wrap;
+    text-align: center;
   
 }
-.downloadResume {
+button {
     display: block;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 4%;
+    padding: 15px;
+    border-radius: 4px;
     width: 40%;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 15px;
+    font-weight: 500;
     text-align: center;
-    background-color: rgb(213, 194, 95);
+    background-color: #3D5C61;
+    color: white;
     transform: translate(80%, 40%);
+}
+.heading {
+    margin: 0;
+    padding: 20px;
+    background-color: #D5C25F;
+    color: black;
 }
 /* My UX Skills section coded using CSS flex */
 .flexContainer {
@@ -95,53 +105,51 @@ nav {
     text-align: center;
 }
 /* My Work Section Grid */
+.myWork {
+    padding: 100px 30px
+}
 .workGrid {
     margin:auto;
     padding: 2%;
     display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-template-rows: 2fr 2fr;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 350px 350px 350px;
     grid-template-areas: 
-    "pawsWorkImg pawsWorkDescription"
-    "choosineWorkImg choosineWorkDescription"
-    "vaycautiousWorkImg vaycautiousWorkDescription"
+    "img1 content1"
+    "img2 content2"
+    "img3 content3"
     ;
 }
-.pawsWorkImg {
-    grid-area: pawsWorkImg;
+.workGrid img {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+  }
+.workGrid button {
+  display: block;
+  align-items: flex-end;
 }
-.pawsWorkDescription {
-    grid-area: pawsWorkDescription;
+.img1 {
+    grid-area: img1;
 }
-.choosineWorkImg {
-    grid-area: choosineWorkImg;
+.img2 {
+    grid-area: img2;
 }
-.choosineWorkDescription {
-    grid-area: choosineWorkDescription;
+.img3 {
+    grid-area: img3;
 }
-.vaycautiousWorkImg {
-    grid-area: vaycautiousWorkImg;
+.img1, .img2, .img3, .content1, .content2, .content3 {
+    padding: 80px;
 }
-.vaycautiouseWorkDescription {
-    grid-area: vaycautiousWorkDescription;
+.content1 {
+    grid-area: content1;
 }
-.workGridArea {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: auto;
-    cursor: pointer;
-    display: grid;
-    align-content: center;
+.content2 {
+    grid-area: content2;
 }
-.seeMore {
-    padding: 5%;
-    width: 30%;
-    font-size: 16px;
-    font-weight: 500;
-    text-align: center;
-    background-color: rgb(213, 194, 95);
-    transform: translate(80%, 40%);
+.content3 {
+    grid-area: content3;
 }
 
 /*footer section */
@@ -162,22 +170,22 @@ footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 @media only screen and (max-width: 600){
-    .flexContainer .flexContainer div {
+    .flexContainer .flexContainer div{
         flex-direction: column;
     }
-    .skill-1 .skill-2 .skill-3 {
+    .skill-1, .skill-2, .skill-3 {
         width: 100;
     }
     .workGrid {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 350px 350px 350px 350px 350px 350px;
         grid-template-areas: 
-            "pawsWorkImg" 
-            "pawsWorkDescription"
-            "choosineWorkImg" 
-            "choosineWorkDescription"
-            "vaycautiousWorkImg" 
-            "vaycautiousWorkDescription"
+            "img1" 
+            "content1"
+            "img2" 
+            "content2"
+            "img3" 
+            "content3"
         ;
     }
 }
