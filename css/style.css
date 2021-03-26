@@ -169,16 +169,16 @@ footer {
     padding: 2px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-@media only screen and (max-width: 600){
-    .flexContainer .flexContainer div{
+@media only screen and (max-width: 600px) {
+    .flexContainer .flexContainer div {
         flex-direction: column;
     }
     .skill-1, .skill-2, .skill-3 {
         width: 100;
     }
     .workGrid {
+        grid-template-rows: 30px 300px 300px 300px 300px 300px;
         grid-template-columns: 1fr;
-        grid-template-rows: 350px 350px 350px 350px 350px 350px;
         grid-template-areas: 
             "img1" 
             "content1"
@@ -189,3 +189,4 @@ footer {
         ;
     }
 }
+
